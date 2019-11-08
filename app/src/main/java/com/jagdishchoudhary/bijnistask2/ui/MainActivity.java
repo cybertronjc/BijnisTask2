@@ -1,10 +1,14 @@
 package com.jagdishchoudhary.bijnistask2.ui;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
 
     @Override
     public void onFragmentInteraction(String uri) {
+        fm.popBackStack("ProductListing", FragmentManager.POP_BACK_STACK_INCLUSIVE);
             addFragment(homeFragment, false, "Home");
             //fm.popBackStack("ProductListing", FragmentManager.POP_BACK_STACK_INCLUSIVE);
     }
@@ -62,4 +67,6 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
         bundle.putString("price", price);
         product.setArguments(bundle);
     }
+
+
 }

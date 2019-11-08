@@ -5,5 +5,6 @@
     <string name="home_fragment">Home fragment</string>
     <string name="product_list_fragment">Home fragment</string>
     <string name="product_fragment">Home fragment</string>
+    <string name="you_sure">Are you sure you want exit?</string>
 
 </resources>

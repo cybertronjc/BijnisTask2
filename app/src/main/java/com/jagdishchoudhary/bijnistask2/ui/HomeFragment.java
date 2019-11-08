@@ -74,6 +74,7 @@ public class HomeFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
 
         Toast.makeText(getContext(), "You are on Home Fragment", Toast.LENGTH_SHORT).show();
+       
 
         Button btnShowProducts = view.findViewById(R.id.btnShowProducts);
         btnShowProducts.setOnClickListener(new View.OnClickListener() {
@@ -125,4 +126,6 @@ public class HomeFragment extends Fragment {
         // TODO: Update argument type and name
         void onHomeFragmentInteraction(String uri);
     }
+
+
 }
